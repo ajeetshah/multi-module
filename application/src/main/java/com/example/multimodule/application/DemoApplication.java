@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @SpringBootApplication(scanBasePackages = "com.example.multimodule")
 @RestController
 public class DemoApplication {
@@ -19,6 +21,8 @@ public class DemoApplication {
 	@GetMapping("/")
 	public String home() {
 		return myService.message();
+		// List<String> names = Lists.newArrayList("John", "Adam", "Jane");
+		// List<String> reversed = Lists.reverse(names);
 	}
 
 	public static void main(String[] args) {
