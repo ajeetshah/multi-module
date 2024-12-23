@@ -40,3 +40,5 @@ mem*.db
 README.html
 
 dependency.dot
+
+parentChildVersionMap.json
