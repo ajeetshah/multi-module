@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.springframework</groupId>
-    <artifactId>gs-multi-module</artifactId>
+    <artifactId>multi-module</artifactId>
     <version>0.1.0</version>
     <packaging>pom</packaging>
 
@@ -12,5 +12,13 @@
         <module>library</module>
         <module>application</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>24.1-jre</version>
+        </dependency>
+    </dependencies>
 
 </project>
